@@ -6,12 +6,14 @@ export function Greeting({ title, name = "user" }) {
   );
 }
 
-export function UserCard({ name, amount, married, address, greet }) {
+export function UserCard({ name, amount, married, address, greet }) 
+{
+  console.log(name, amount, married, address, greet)
   return (
     <div>
       <h1>{name}</h1>
       <h2>💲{amount}</h2>
-      <h2>💑{married ? "married" : "sigle"}</h2>
+      <h2>💑{married ? "married" : "single"}</h2>
       <ul>
         <li>
           <h2>City: {address.city}</h2>

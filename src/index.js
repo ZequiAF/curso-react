@@ -11,8 +11,19 @@ root.render(
       amount={3000}
       married={true}
       points={[99, 33.3, 22.2]}
-      greet={function() {alert('Hello')}}
       address={{ street: "123 Main Street", city: "New York" }}
+      greet={function() { alert('Hello')}}
+    />
+
+    <UserCard
+    name="Joe Macmillan"
+    amount={1000}
+    married={false}
+    points={[100, 20]}
+    address={{
+      street: "Av some 123",
+      city: 'Orlando'
+    }}
     />
   </>
 );
